@@ -49,3 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSlide();
     }, 5000);
 });
+
+//redirije boton Consultar vehiculo
+document.getElementById('consultarButton').addEventListener('click', () => {
+    // Redirigir a la página de "campanasdeseguridad.html"
+    window.location.href = './campanasdeseguridad.html';
+});
