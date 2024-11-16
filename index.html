@@ -26,8 +26,7 @@
                 </li>
                 <li class="submenu" aria-label="posventa">
                     <a href="#">POSVENTA</a>
-                    <ul>
-                        
+                    <ul> 
                         <li> <a href="#">Tu cita en el taller</a></li>
                         <li> <a href="#">Tienda en línea</a></li>
                         <li> <a href="#">Servicios Nissan</a></li>
@@ -73,10 +72,38 @@
             <button class="prev">←</button>
             <button class="next">→</button>
         </section>
+
+        <select id="categorySelect" class="category-select">
+            <option value="todos">Todos</option>
+            <option value="destacados">Destacados</option>
+            <option value="automoviles">Automóviles</option>
+            <option value="camionetas">Camionetas</option>
+            <option value="electricos">Eléctricos</option>
+            <option value="ePower">E-Power</option>
+            <option value="pickUpsYComerciales">Pick Ups y Comerciales</option>
+        </select>
+    
+        <ul id="carList" class="car-list">
+            <!-- Los vehículos se agregarán aquí dinámicamente -->
+        </ul>
+
+        <!-- Sección Consulta tu vehículo -->
+    <section id="consultarVehiculo" class="consulta-vehiculo">
+        <div class="consulta-contenedor">
+            <h2>Consulta tu vehículo</h2>
+            <p>Obtén toda la información de tu vehículo rápidamente.</p>
+            <button id="consultarButton" class="consulta-btn">Consulta tu vehículo</button>
+        </div>
+    </section>
+
+    
     </main>
     <footer>
         <!--Pie de pagina -->
     </footer>
     <script src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/SelectCars.js"></script>
+
+
 </body>
 </html>
