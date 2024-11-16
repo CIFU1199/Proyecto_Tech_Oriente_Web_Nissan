@@ -58,27 +58,80 @@ button:hover {
 /*Fin Estilos Slider*/
 
 /*Inicio Lista de carros */
-.category-select {
-            margin: 20px;
-        }
+/* Contenedor del select para centrarlo */
+.select-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilo principal del select */
+#categorySelect {
+    width: 250px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url("assets/img/arrow-down.svg"); /* Personalizar con un ícono */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Hover para indicar interacción */
+#categorySelect:hover {
+    border-color: #e0002d;
+    box-shadow: 0 4px 8px rgba(224, 0, 45, 0.2);
+}
+
+/* Foco para accesibilidad */
+#categorySelect:focus {
+    border-color: #e0002d;
+    outline: none;
+    box-shadow: 0 0 6px rgba(224, 0, 45, 0.4);
+}
+
 .car-list {
-    list-style-type: none;
-     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
 }
-.car-list li {
-    margin: 5px 0;
-}
+
 .car-item {
-    display: flex;
-    align-items: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .car-item img {
-    width: 50px;
+    width: 100px;
     height: auto;
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
+.car-item span {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 /*fin Lista de carros */
 
 /*Inicio estilos campo Consulta tu vehiculo*/
@@ -308,6 +361,12 @@ button:hover {
 
     .card {
         max-width: 90%;
+    }
+
+    #categorySelect {
+        width: 90%;
+        max-width: 300px;
+        font-size: 0.9rem;
     }
 }
 
