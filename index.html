@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/stiles.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <title>Nissan.com</title>
 </head>
 <body>
     <header>
         <!-- Encabezado y menú de navegación -->
          <div class="logo">
-            <img src="./assets/img/LogoNissan-W.png" alt="Nissan">
+            <a href="./index.html"><img src="./assets/img/LogoNissan-W.png" alt="Nissan"></a>
+            
          </div>
 
          <nav class="nav" role="navigation" aria-label="Menú principal">
@@ -88,18 +91,110 @@
         </ul>
 
         <!-- Sección Consulta tu vehículo -->
-    <section id="consultarVehiculo" class="consulta-vehiculo">
-        <div class="consulta-contenedor">
-            <h2>Consulta tu vehículo</h2>
-            <p>Obtén toda la información de tu vehículo rápidamente.</p>
-            <button id="consultarButton" class="consulta-btn">Consulta tu vehículo</button>
+        <section id="consultarVehiculo" class="consulta-vehiculo">
+            <div class="consulta-contenedor">
+                <h2>Consulta tu vehículo</h2>
+                <p>Obtén toda la información de tu vehículo rápidamente.</p>
+                <button id="consultarButton" class="consulta-btn">Consulta tu vehículo</button>
+            </div>
+        </section>
+        <!-- Sección "Me gustaría" -->
+        <section class="me-gustaria">
+            <h2>Me gustaría</h2>
+            <div class="buttons-container">
+                <a href="#" class="action-button"><i class='bx bx-money-withdraw' ></i> COTIZAR</a>
+                <a href="#" class="action-button"><i class='bx bx-car' ></i> VITRINAS</a>
+                <a href="#" class="action-button"><i class='bx bx-cog' ></i> TU CITA EN EL TALLER</a>
+                <a href="#" class="action-button"><i class='bx bxs-contact' ></i> CONTACTO</a>
+            </div>
+        </section>
+        <!-- Sección Noticias y Eventos -->
+<section class="noticias-eventos">
+    <h2>Noticias y Eventos</h2>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="./assets/img/noticia1.jpg" alt="Noticia 1">
+            <div class="card-content">
+                <p class="news-type">Nissan Noticias </p>
+                <h3 class="news-title">Nissan Colombia Anuncia el Nombramiento de Carlos Vargas como Nuevo Gerente de Mercadeo </h3>
+                <p class="news-description">
+                    Bogotá, julio de 2024. Nissan Colombia se complace en anunciar el nombramiento de Carlos Vargas como el nuevo Gerente de Mercadeo. Con más de 20 años de experiencia en la dirección de estrategias de marketing de comunicación, posicionamiento de marca y una destacada trayectoria en el desarrollo de estrategias de mercadeo innovadoras, Vargas se une al equipo Nissan, para liderar y fortalecer las iniciativas de mercadeo en el país.
+                </p>
+                <a href="#" class="read-more">Leer más <i class='bx bx-chevron-right'></i></a>
+            </div>
         </div>
-    </section>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="./assets/img/noticia2.jpg" alt="Noticia 2">
+            <div class="card-content">
+                <p class="news-type">Nissan Noticias </p>
+                <h3 class="news-title">La Nueva camioneta Nissan Pathfinder llega oficialmente a Colombia </h3>
+                <p class="news-description">
+                    Bogotá, julio de 2024. 36 años después del lanzamiento del modelo original, llega al país la totalmente renovada la camioneta Nissan Pathfinder, conservando el ADN de Nissan con un diseño completamente nuevo que incorpora elementos innovadores y modernos. La evolución de este modelo ha regresado a sus sólidas raíces, exaltando características que lo convierten en un vehículo que transmite fuerza, que cuenta con capacidad robusta y al mismo tiempo se equipa con características avanzadas de seguridad y tecnología que forman parte de la filosofía de marca Nissan Intelligent Mobility para mantener a los ocupantes seguros y cómodos durante las aventuras diarias.  
+                </p>
+                <div class="btn-readmore">
+                    <a href="#" class="read-more ">Leer más <i class='bx bx-chevron-right'></i></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="BtnReadMore">
+        <a href="#" class="read-more">Leer Noticias  eventos<i class='bx bx-chevron-right'></i></a>
+    </div>
+</section>
 
-    
+<section class="noticias-eventos">
+    <h3>Una nueva aventura en cada vuelta</h3>
+    <h2>Experiencia Nissan</h2>
+    <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="./assets/img/noticia3.jpg" alt="Noticia 1">
+            <div class="card-content">
+                <p class="news-type">El futuro de la conducción ya está aquí. Y es emocionante. </p>
+                <h3 class="news-title">Nissan Intelligent Mobility</h3>
+                <a href="#" class="read-more">Descubre Más<i class='bx bx-chevron-right'></i></a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="./assets/img/noticia4.jpg" alt="Noticia 2">
+            <div class="card-content">
+                <p class="news-type">#Estilo de vida #Nissan Intelligent Mobility</p>
+                <h3 class="news-title">Estadio de futbol se apunta una anotación con baterías de Nissan Leaf </h3>
+                <div class="btn-readmore">
+                    <a href="#" class="read-more ">Descubre Más <i class='bx bx-chevron-right'></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
     </main>
     <footer>
-        <!--Pie de pagina -->
+        <div class="footer-info">
+            <p>© 2024 Nissan Colombia. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#politicas">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/Nissan" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/Nissan" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/Nissan" target="_blank">Twitter</a>
+        </div>
+        <div class="footer-contact">
+            <p>Línea de atención: 1-4866870</p>
+            <p>Email: contacto@nissan.com.co</p>
+        </div>
     </footer>
     <script src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/SelectCars.js"></script>

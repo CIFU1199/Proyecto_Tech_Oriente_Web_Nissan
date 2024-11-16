@@ -95,131 +95,63 @@ header {
 /*Fin estilos nav*/
 
 
-/*Inicio estilos Slider*/
-/* Estilos generales del slider */
-.slider {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin: 0 auto;
-}
 
-/* Contenedor de las diapositivas */
-.slides {
-    display: flex;
-    transition: transform 1s ease-in-out; /* Transición suave entre imágenes */
-}
-
-/* Cada diapositiva */
-.slide {
-    min-width: 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
-    height: 100%;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Botones de control */
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/*Fin Estilos Slider*/
-
-/*Inicio Lista de carros */
-.category-select {
-            margin: 20px;
-        }
-.car-list {
-    list-style-type: none;
-     padding: 0;
-}
-.car-list li {
-    margin: 5px 0;
-}
-.car-item {
-    display: flex;
-    align-items: center;
-}
-
-.car-item img {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-/*fin Lista de carros */
-
-/*Inicio estilos campo Consulta tu vehiculo*/
-/* Estilos para la sección "Consulta tu vehículo" */
-#consultarVehiculo {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
+/*Inicio Estilos Footer */
+/* Pie de página */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    margin-top: 40px;
 }
 
-.consulta-contenedor {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.consulta-vehiculo h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.consulta-vehiculo p {
-    font-size: 1.2rem;
-    color: #666;
+footer .footer-info {
     margin-bottom: 20px;
 }
 
-.consulta-btn {
-    background-color: #000;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+footer .footer-info p {
+    font-size: 14px;
+    margin: 5px 0;
 }
 
-.consulta-btn:hover {
-    background-color: #444;
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
 }
 
-/*Fin estilos campo Consulta tu vehiculo*/
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer nav ul li a:hover {
+    color: #ccc;
+}
+
+footer .footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .footer-social a:hover {
+    color: #ccc;
+}
+
+footer .footer-contact p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* fin estilos footer*/
 
 
 @media (max-width: 768px) {
@@ -258,33 +190,7 @@ button:hover {
         padding: 12px 20px; /* Un poco más grande para que sea fácil hacer clic */
     }
 
-    button.prev, button.next {
-        padding: 8px 12px; /* Botones más pequeños */
-        font-size: 16px;  /* Texto más pequeño */
-    }
-
-    button.prev {
-        left: 5px; /* Más cerca de los bordes */
-    }
-
-    button.next {
-        right: 5px;
-    }
-
-    /* boton consulta tu vehiculo para moviles
-    */
-    .consulta-vehiculo h2 {
-        font-size: 1.6rem;
-    }
-
-    .consulta-vehiculo p {
-        font-size: 1rem;
-    }
-
-    .consulta-btn {
-        width: 100%;
-        padding: 12px 0;
-    }
+   
 }
 
 
@@ -294,16 +200,5 @@ button:hover {
         padding: 8px 15px; /* Reducir tamaño de los enlaces en pantallas muy pequeñas */
     }
 
-    button.prev, button.next {
-        padding: 6px 10px; /* Más compacto aún */
-        font-size: 14px;
-    }
 
-    button.prev {
-        left: 3px;
-    }
-
-    button.next {
-        right: 3px;
-    }
 }

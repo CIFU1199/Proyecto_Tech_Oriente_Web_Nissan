@@ -1,0 +1,115 @@
+/* Estilos para la sección principal */
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+main h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Estilos del formulario */
+form {
+    margin-top: 20px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+form p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.continue-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #444;
+}
+
+/* Estilos de dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    footer .footer-info p {
+        font-size: 12px;
+    }
+
+    footer .footer-social a {
+        font-size: 14px;
+    }
+
+    footer .footer-contact p {
+        font-size: 12px;
+    }
+}
