@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/stiles.css">
+    <link rel="stylesheet" href="./assets/css/tuCita.css">
+    <title>Nissan.com</title>
+</head>
+<body>
+    <header>
+        <!-- Encabezado y menú de navegación -->
+         <div class="logo">
+            <a href="./index.html"><img src="./assets/img/LogoNissan-W.png" alt="Nissan"></a>
+         </div>
+
+         <nav class="nav" role="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a href="./showroom.html" aria-label="Showroom virtual">SHOWROOM VIRTUAL</a></li>
+                <li><a href="#"aria-label="Vehiculos">VEHICULOS</a></li>
+                <li class="submenu" >
+                    <a href="#" aria-label="Credinissan">CREDINISSAN</a>
+                    <ul>
+                        <li><a href="#" >Credinissan</a></li>
+                        <li><a href="#">Simulador</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" aria-label="posventa">
+                    <a href="#">POSVENTA</a>
+                    <ul> 
+                        <li> <a href="#">Tu cita en el taller</a></li>
+                        <li> <a href="#">Tienda en línea</a></li>
+                        <li> <a href="#">Servicios Nissan</a></li>
+                        <li> <a href="#">Promociones posventa</a></li>
+                        <li> <a href="#">Atención al Cliente</a></li>
+                        <li> <a href="#">Campañas de Seguridad</a></li>
+                        <li> <a href="#">Mantenimiento</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#" aria-label="flotas">FLOTAS</a></li>
+                <li class="submenu">
+                    <a href="#" aria-label="experiencia Nissan">EXPERIENCIA NISSAN</a>
+                    <ul>
+                        <li><a href="#">Esto es Nissan</a></li>
+                        <li><a href="#">e-POWER</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Nissan Intelligent Mobility</a></li>
+                        <li><a href="#">Desempeño NISMO</a></li>
+                        <li><a href="#">Manuales</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#" aria-label="Nissan Colombia">NISSAN COLOMBIA</a>
+                    <ul>
+                        <li><a href="#">Noticias y Eventos</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <section class="appointment-form">
+            <div class="appointment-header">
+                <h2>PROGRAMAR CITA</h2>
+                <p>Acá puedes programar tu próxima cita en el taller. Reserva en el horario que más te convenga la cita para el mantenimiento de tu vehículo.</p>
+            </div>
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="vehicle-plate">No. PLACA VEHÍCULO *</label>
+                    <div class="input-split">
+                        <input type="text" id="vehicle-plate-part1" placeholder="XXX" required>
+                        <input type="text" id="vehicle-plate-part2" placeholder="000" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="id-number">No. IDENTIFICACIÓN *</label>
+                    <input type="text" id="id-number" placeholder="Ingresa tu identificación" required>
+                </div>
+                <button type="submit" class="btn-submit">ENVIAR</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>© 2024 Nissan Colombia. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#politicas">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/Nissan" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/Nissan" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/Nissan" target="_blank">Twitter</a>
+        </div>
+        <div class="footer-contact">
+            <p>Línea de atención: 1-4866870</p>
+            <p>Email: contacto@nissan.com.co</p>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
