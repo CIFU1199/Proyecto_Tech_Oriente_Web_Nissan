@@ -1,0 +1,131 @@
+/* General styles for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('../img/Fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px; /* Ajusta según necesites */
+}
+
+header .logo img {
+    height: 10rem; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-left: 20px; /* Espaciado desde el borde izquierdo */
+}
+
+/* Main content */
+main.show-virtual {
+    text-align: center;
+    padding: 20px;
+}
+
+main.show-virtual h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Vehicle showcase grid */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    left:30px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-item {
+    flex: 0 0 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.carousel-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: white;
+    background-color: #d01f26;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.carousel-item a:hover {
+    background-color: #b01922;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    user-select: none;
+}
+
+.carousel-btn.prev-btn {
+    left:10px;
+}
+
+.carousel-btn.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main.show-virtual h1 {
+        font-size: 2rem;
+    }
+    
+}
