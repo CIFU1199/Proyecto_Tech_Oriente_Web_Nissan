@@ -3,28 +3,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.form-container');
     const notification = document.getElementById('notification');
 
-    if (!form) {
-        console.error("Formulario no encontrado. Asegúrate de que el elemento con la clase 'form-container' existe en el HTML.");
+    if (!form || !notification) {
+        console.error("Formulario o notificación no encontrados en el DOM.");
         return;
     }
-    if (!notification) {
-        console.error("Elemento de notificación no encontrado. Asegúrate de que el elemento con el id 'notification' existe en el HTML.");
-        return;
-    }
-
     // Función para simular el envío de la cita
     form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
 
         // Obtener los valores de los campos
-        const vehiclePlatePart1 = document.getElementById('vehicle-plate-part1').value;
-        const vehiclePlatePart2 = document.getElementById('vehicle-plate-part2').value;
-        const idNumber = document.getElementById('id-number').value;
+        const vehiclePlatePart1 = document.getElementById('vehicle-plate-part1').value.trim();
+        const vehiclePlatePart2 = document.getElementById('vehicle-plate-part2').value.trim();
+        const idNumber = document.getElementById('id-number').value.trim();
 
         // Validar que ambos campos de placa estén completos
         if (vehiclePlatePart1 && vehiclePlatePart2 && idNumber) {
-            console.log("Campos validados correctamente.");
-
             // Crear un objeto con los datos
             const cita = {
                 placa: `${vehiclePlatePart1}-${vehiclePlatePart2}`,
@@ -34,7 +27,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Obtener citas existentes de localStorage
             const citasExistentes = JSON.parse(localStorage.getItem('citas')) || [];
+            const existeCita = citasExistentes.some(c => c.placa === cita.placa && c.identificacion === cita.identificacion);
             
+            if (existeCita) {
+                alert("Esta cita ya está programada.");
+                return;
+            }
+
+
             // Añadir la nueva cita a la lista de citas
             citasExistentes.push(cita);
 
