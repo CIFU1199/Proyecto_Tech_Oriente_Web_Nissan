@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/stiles.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <title>Nissan.com</title>
+</head>
+<body>
+    <header>
+        <!-- Encabezado y menú de navegación -->
+         <div class="logo">
+            <a href="./index.html"><img src="./assets/img/LogoNissan-W.png" alt="Nissan"></a>
+         </div>
+
+         <nav class="nav" role="navigation" aria-label="Menú principal">
+            <ul>
+                <li><a href="./showroom.html" aria-label="Showroom virtual">SHOWROOM VIRTUAL</a></li>
+                <li><a href="#"aria-label="Vehiculos">VEHICULOS</a></li>
+                <li class="submenu" >
+                    <a href="#" aria-label="Credinissan">CREDINISSAN</a>
+                    <ul>
+                        <li><a href="#" >Credinissan</a></li>
+                        <li><a href="#">Simulador</a></li>
+                    </ul>
+                </li>
+                <li class="submenu" aria-label="posventa">
+                    <a href="#">POSVENTA</a>
+                    <ul> 
+                        <li> <a href="#">Tu cita en el taller</a></li>
+                        <li> <a href="#">Tienda en línea</a></li>
+                        <li> <a href="#">Servicios Nissan</a></li>
+                        <li> <a href="#">Promociones posventa</a></li>
+                        <li> <a href="#">Atención al Cliente</a></li>
+                        <li> <a href="#">Campañas de Seguridad</a></li>
+                        <li> <a href="#">Mantenimiento</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#" aria-label="flotas">FLOTAS</a></li>
+                <li class="submenu">
+                    <a href="#" aria-label="experiencia Nissan">EXPERIENCIA NISSAN</a>
+                    <ul>
+                        <li><a href="#">Esto es Nissan</a></li>
+                        <li><a href="#">e-POWER</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Nissan Intelligent Mobility</a></li>
+                        <li><a href="#">Desempeño NISMO</a></li>
+                        <li><a href="#">Manuales</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#" aria-label="Nissan Colombia">NISSAN COLOMBIA</a>
+                    <ul>
+                        <li><a href="#">Noticias y Eventos</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <!-- Sección de Contacto -->
+    <section class="contacto">
+        <h1>Formulario de Contacto Nissan</h1>
+        <p>
+            Puedes comunicarte con nosotros a través de la línea nacional 018000 423854, 
+            en Bogotá 601-4866870 o a través de WhatsApp 3022630685 de lunes a viernes de 
+            7:00 a.m. a 6:00 p.m, sábados de 7:00 a.m. a 1:00 p.m. o si lo deseas puedes 
+            enviarnos un mensaje a través del siguiente formulario.
+        </p>
+        
+        <form action="#" method="POST">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="primer-apellido">Primer Apellido *</label>
+            <input type="text" id="primer-apellido" name="primer-apellido" required>
+
+            <label for="segundo-apellido">Segundo Apellido</label>
+            <input type="text" id="segundo-apellido" name="segundo-apellido">
+
+            <label for="genero">Género *</label>
+            <select id="genero" name="genero" required>
+                <option value="">Seleccione</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="tipo-documento">Tipo de Documento *</label>
+            <select id="tipo-documento" name="tipo-documento" required>
+                <option value="">Seleccione tipo</option>
+                <option value="cedula">Cédula de ciudadanía</option>
+                <option value="nit">NIT</option>
+                <option value="pasaporte">Pasaporte</option>
+            </select>
+
+            <label for="numero-documento">Número de Documento *</label>
+            <input type="text" id="numero-documento" name="numero-documento" required>
+
+            <label for="correo">Correo Electrónico *</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="celular">Celular *</label>
+            <input type="tel" id="celular" name="celular" required>
+
+            <label for="departamento">Departamento *</label>
+            <select id="departamento" name="departamento" required>
+                <option value="">Selecciona uno de la lista</option>
+                <option value="bogota">Bogotá</option>
+                <option value="antioquia">Antioquia</option>
+                <option value="valle">Valle del Cauca</option>
+            </select>
+
+            <label for="ciudad">Ciudad *</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <label for="autorizacion">
+                <input type="checkbox" id="autorizacion" name="autorizacion" required>
+                Autorizo el tratamiento de mis datos personales.
+            </label>
+
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+        
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>© 2024 Nissan Colombia. Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#politicas">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/Nissan" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/Nissan" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/Nissan" target="_blank">Twitter</a>
+        </div>
+        <div class="footer-contact">
+            <p>Línea de atención: 1-4866870</p>
+            <p>Email: contacto@nissan.com.co</p>
+        </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
